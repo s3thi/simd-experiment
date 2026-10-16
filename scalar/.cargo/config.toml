@@ -1,0 +1,4 @@
+# Applies to scalar and its dependencies, including the shared counting loop.
+# Run Cargo from this directory so it loads these flags.
+[build]
+rustflags = ["-C", "no-vectorize-loops", "-C", "no-vectorize-slp"]
